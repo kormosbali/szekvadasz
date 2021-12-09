@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Székvadász</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="fooldal">
+            <a href="index.html"><img src="Images/Logo.png" alt="Székvadaász"></a>
+        </div>
+        <form action="/api/foglalas" method="POST">       
+            <div class="szolgaltatas">
+                <h2>Műkörmös</h2>
+                <br>
+                <input type="hidden" name="szolgaltato" value="Műkörmös"/>
+                <input name="vezetekNev" placeholder="Vezetéknév" type="text" required/>
+                <br>
+                <input name="keresztNev" placeholder="Keresztnév" type="text" required/>
+                <br>
+                <label for="szolg-tipus">Válasszon szolgáltatást!</label>
+                <br>
+                <select name="szolgTipus" id="szolg-tipus">
+                    <option value="Műköröm építés">Műköröm építés</option>
+                    <option value="Gél lakk">Gél lakk</option>
+                    <option value="Manikűr">Manikűr</option>
+                </select>
+                <br>
+                <label for="datum">Válasszon dátumot!</label>
+                <br>
+                <input name="datum" type="datetime-local" id="datum" required/>
+                <br>
+                <button type="submit">Foglalás</button>
+            </div>   
+        </form>
+    </body>
+</html>

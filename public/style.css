@@ -1,0 +1,24 @@
+.fooldal {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.fooldal img {
+    width: 200px;
+}
+
+.szolgaltatas {
+    width: 100%;
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 200px;
+    margin-bottom: 30px;
+}
